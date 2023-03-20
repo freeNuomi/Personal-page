@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Untitled</title>
+<head>
+    <title>まじめな笑笑</title>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="shortcut icon" href="images/myicon4.ico">
     <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
     <script src="js/vue.min.js" language="JavaScript"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/html2canvas.min.js" async="async"></script>
     <style>
-      img {
-        border-radius: 10px;
-      }
+        img {
+            border-radius: 10px;
+        }
     </style>
-  </head>
+</head>
 
   <body class="is-preload">
     <!-- Loader -->
@@ -56,26 +55,21 @@
         <header v-show="Contacts">
           <span class="avatar"
             ><img
-              src="images/avatar.jpg"
+              src="images/player.jpg"
               alt=""
               style="width: 122px; height: 122px"
           /></span>
-          <h1>Untitled</h1>
+          <h1>まじめな笑笑</h1>
           <transition-group name="fade">
             <div v-show="defaults" key="text">
-              <p>Lorem</p>
+                <p>我不知道你从哪找到我的，但是你确实找到我了。</p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore facere accusamus quae nesciunt at fuga dicta vitae
-                quidem reiciendis. Quos blanditiis corporis vel iusto
-                reprehenderit ratione distinctio fugiat quae sed.
+                  如果你想知道更多关于我的东西……
               </p>
-              <button
-                class="button small fit"
-                @click="showAbout"
-                v-bind:disabled="onTransition==1"
-              >
-                Click!
+              <button class="button small fit"
+                      @click="showAbout"
+                      v-bind:disabled="onTransition==1">
+                  可以点击这里
               </button>
             </div>
             <div
@@ -198,7 +192,7 @@
               name: "Wechat",
               icon: "icon brands fa-weixin",
               desc: "微信",
-              content: "<img src='images/demoQR.png' class='qr' />",
+              content: "<img src='images/wechatQR.jpg' class='qr' />",
               show: false,
               jump: false,
             },
@@ -207,52 +201,38 @@
               icon: "icon brands fa-qq",
               desc: "QQ",
               content:
-                "<img src='images/demoQR.png' class='qr' /><h2>QQ:XXXXXX</h2>",
+                "<img src='images/qqQR.jpg' class='qr' /><h2>QQ:2682530112</h2>",
               show: false,
               jump: false,
-            },
-            {
-              name: "Github",
-              icon: "icon brands fa-github",
-              desc: "Github",
-              content: "https://github.com/Jiaocz/Personal-page",
-              show: false,
-              jump: true,
             },
           ],
 
           //Pages content
           page: [
             {
-              title: "Page 1",
+              title: "我是一个开发人员",
               texts: [
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore facere accusamus quae nesciunt at fuga dicta vitae quidem reiciendis. Quos blanditiis corporis vel iusto reprehenderit ratione distinctio fugiat quae sed.",
+                "  目前在东莞的一家软件公司工作,担任后台开发的任务.喜欢做一些小东西,比如爬虫,游戏辅助,设备数据采集之类的小东西",
               ],
               html: "",
-              imgs: ["images/bg.jpg"],
+                  imgs: ["images/pic.jpg", "images/game1.jpg"],
             },
             {
-              title: "Page 2",
-              texts: ["Some text", "And some text"],
-              html: "<h2>HTML Support</h2>",
-              imgs: [""],
+                title: "有很多的爱好",
+                texts: ["例如动漫绘画、鬼畜视频、游戏、视频剪辑等等", "同时也有着很多的作品（虽然很多水平都很菜）","下面有我一些游戏辅助作品、鬼畜视频，也不是很专业，看看就好"],
+                html: "<a href='https://space.bilibili.com/219323607' target='_blank' rel='nofollow noopener'><u>B站个人中心</u></a><iframe src='https://player.bilibili.com/player.html?aid=474111527&bvid=BV1rK411Q7uv&cid=860602326&page=1' scrolling='no' border='0' frameborder='no' framespacing='0' allowfullscreen='true'> </iframe>",
+                imgs: ["images/game2.png"],
             },
             {
-              title: "Page 3",
-              texts: ["Multi images"],
-              imgs: ["images/bg.jpg", "images/demoQR.png"],
-              html: "",
-            },
-            {
-              title: "Page 4",
+              title: "问卷小调查",
               texts: ["Another Demo"],
-              html: '<a onclick="todonate()" style="color:#fff; background-color:#f0a1a8; border-radius: 0.3em; padding: 0.2em; cursor: pointer;"><<u>Donate!</u>></a><br /><p style="color:#ccc; font-size:0.7em;">Last updated: Apr. 14, 2021<p>',
+                html: "<iframe id='goldendata_form_rMazgw' src='https://jinshuju.net/f/rMazgw?background=white&amp;banner=show&amp;embedded=true&amp;inner_redirect=false' width='100%' frameborder='0' allowtransparency='true' height='510'></iframe>",
               imgs: [""],
             },
             {
               title: "Eastern egg page!",
               texts: ["Can only access with ?page=#"],
-              html: "<a href='https://github.com/Jiaocz/Personal-page' target='_blank'>Origin project</a>",
+                html: "",
             },
           ],
           /*            Change ends here                 */
